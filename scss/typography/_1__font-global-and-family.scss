@@ -1,0 +1,138 @@
+/* ----------------------------------------------------------------------------------
+			TITLE OF STYLE SHEET
+---------------------------------------------------------------------------------- */
+
+/* +============================+
+		A. INTRODUCTION/NOTES:
++=============================+ */
+/*
+
+For: Notes, Important things, TODO's, stuff, Tigers, Lions, Bears..., etc.
+
+*/
+
+/* +=============================+
+		B. TABLE OF CONTENTS:
++=============================+ */
+/*
+
+    A. Notes
+    B. Table of Contents
+
+	1. Font Family
+		1.1
+	2. Set Global Font
+
+
+
+*/
+
+
+/* +=============================+
+		B. TABLE OF CONTENTS:
++=============================+ */
+/*
+
+    A. Notes
+    B. Table of Contents
+
+	1. Font Family
+		1.1 Averta
+		1.2  Set Global Font
+	2. Font Weight/Style
+		2.1 Weight
+		2.2 Style
+	3. Font Size
+		3.1 Base Size
+		3.2 Sizes
+			3.2.1 Header and Paragraph Tags
+			3.2.2 Sizing Classes
+	4. Font Alignment
+	5. Font Color
+	6. Additional Helper Classes
+*/
+
+
+/* +=============================+
+		1. Font Family
++=============================+ */
+
+/* =-----------------------------=
+		1.1 Averta
+ */
+
+
+@font-face {
+	font-family: 'averta';
+	src: url('/css/fonts/Averta/averta-thin-webfont.eot');
+	src: url('/css/fonts/Averta/averta-thin-webfont.eot?#iefix') format('embedded-opentype'),
+		url('/css/fonts/Averta/averta-thin-webfont.woff2') format('woff2'),
+		url('/css/fonts/Averta/averta-thin-webfont.woff') format('woff'),
+		url('/css/fonts/Averta/averta-thin-webfont.svg#avertathin') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'averta';
+	src: url('/css/fonts/Averta/averta-light-webfont.eot');
+	src: url('/css/fonts/Averta/averta-light-webfont.eot?#iefix') format('embedded-opentype'),
+		url('/css/fonts/Averta/averta-light-webfont.woff2') format('woff2'),
+		url('/css/fonts/Averta/averta-light-webfont.woff') format('woff'),
+		url('/css/fonts/Averta/averta-light-webfont.svg#avertalight') format('svg');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'averta';
+	src: url('/css/fonts/Averta/averta-regular-webfont.eot');
+	src: url('/css/fonts/Averta/averta-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('/css/fonts/Averta/averta-regular-webfont.woff2') format('woff2'),
+		url('/css/fonts/Averta/averta-regular-webfont.woff') format('woff'),
+		url('/css/fonts/Averta/averta-regular-webfont.svg#avertaregular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'averta';
+	src: url('/css/fonts/Averta/averta-bold-webfont.eot');
+	src: url('/css/fonts/Averta/averta-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('/css/fonts/Averta/averta-bold-webfont.woff2') format('woff2'),
+		url('/css/fonts/Averta/averta-bold-webfont.woff') format('woff'),
+		url('/css/fonts/Averta/averta-bold-webfont.svg#avertabold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'averta';
+	src: url('/css/fonts/Averta/averta-black-webfont.eot');
+	src: url('/css/fonts/Averta/averta-black-webfont.eot?#iefix') format('embedded-opentype'),
+		url('/css/fonts/Averta/averta-black-webfont.woff2') format('woff2'),
+		url('/css/fonts/Averta/averta-black-webfont.woff') format('woff'),
+		url('/css/fonts/Averta/averta-black-webfont.svg#avertablack') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}
+
+
+/* +=============================+
+		2. Set Global Font
++=============================+ */
+
+* {
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+body {
+  font-family: averta, helvetica, arial;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 5px 0 0 0;
+	font-weight: 400;
+}

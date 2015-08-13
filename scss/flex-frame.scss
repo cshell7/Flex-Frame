@@ -1,0 +1,92 @@
+/*===============================================================================
+----------------------------------------------------------------------------------
+			FLEX FRAME
+----------------------------------------------------------------------------------
+===============================================================================*/
+
+/* +============================+
+		A. INTRODUCTION/NOTES:
++=============================+ */
+/*
+
+  -Thanks for using Flex Frame for your project. I hope it makes your life easier and your site more epic.
+
+  -This .scss file is just for notes and import of all of the other .scss files. There are no classes in this file but it is instead used to complile the main .css file from the imported .scss files.
+
+  -This is also a good place to get an overview of all of the CSS being used and where to find a certain class.
+
+  -Check out ____ for an introduction on how to use this framework.
+
+*/
+
+/* +=============================+
+		B. TABLE OF CONTENTS:
++=============================+ */
+/*
+
+    A. Notes
+    B. Table of Contents
+
+	1. @import of .scss's   //This also includes and overview of each file
+		1.1 Flex Frame
+		1.2 Responsive Typography
+
+*/
+
+
+/* +=============================+
+		1. @IMPORT'S
++=============================+ */
+
+//To keep things clean and organized the .scss files are split up by their function then imported here and compiled as one .css file.
+
+//NOTE: Each .scss file import below will have a description for quick reference, but refer to the actual file for the most up to date table of contents and explanation. We will try to keep these updated, but no promises.
+
+
+
+/* =-----------------------------=
+		1.1 Flex Frame
+ */
+
+
+/* stuff and stuff */
+	@import "flex-frame/0__flex-variables.scss";
+
+/* stuff and stuff */
+	@import "flex-frame/1__site-containers.scss";
+
+/* stuff and stuff */
+	@import "flex-frame/2__flex-containers.scss";
+
+/* stuff and stuff */
+	@import "flex-frame/3__flex-items.scss";
+
+/* stuff and stuff */
+	@import "flex-frame/4__flex-columns.scss";
+
+/* stuff and stuff */
+	@import "flex-frame/5__flex-testing.scss";
+
+
+
+
+/* =-----------------------------=
+		1.1 Responsive Typography
+ */
+
+ /* stuff and stuff */
+ @import "typography/0__font-variables.scss";
+
+ /* stuff and stuff */
+ 	@import "typography/1__font-global-and-family.scss";
+
+  /* stuff and stuff */
+ 	@import "typography/2__font-size";
+
+  /* stuff and stuff */
+ 	@import "typography/3__font-weight-and-style.scss";
+
+  /* stuff and stuff */
+ 	@import "typography/4__color-and-helper-classes.scss";
+
+  

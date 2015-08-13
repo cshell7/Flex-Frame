@@ -1,0 +1,619 @@
+/* ----------------------------------------------------------------------------------
+			TITLE OF STYLE SHEET
+---------------------------------------------------------------------------------- */
+
+/* +============================+
+		A. INTRODUCTION/NOTES:
++=============================+ */
+/*
+
+For: Notes, Important things, TODO's, stuff, Tigers, Lions, Bears..., etc.
+
+*/
+
+/* +=============================+
+		B. TABLE OF CONTENTS:
++=============================+ */
+/*
+
+    A. Notes
+    B. Table of Contents
+
+	1.
+		1.1
+			1.1.1
+
+
+
+*/
+
+
+/* +=============================+
+		1.
++=============================+ */
+
+/* =-----------------------------=
+		1.1
+ */
+
+/*=----------|1.1.1  |----------=*/
+
+
+/*=----------|2.1.2 Flex Basis  |----------=*/
+
+@mixin flex-item-basis($flx-basis: auto) {
+    $flx-basis-calc: #{$flx-basis}px;
+    flex-basis: $flx-basis-calc;
+}
+
+[data-flex--item*="basis-25"] {
+    @include flex-item-basis(25);
+}
+
+[data-flex--item*="basis-50"] {
+    @include flex-item-basis(50);
+}
+
+[data-flex--item*="basis-75"] {
+    @include flex-item-basis(75);
+}
+
+[data-flex--item*="basis-100"] {
+    @include flex-item-basis(100);
+}
+
+[data-flex--item*="basis-125"] {
+    @include flex-item-basis(125);
+}
+
+[data-flex--item*="basis-150"] {
+    @include flex-item-basis(150);
+}
+
+[data-flex--item*="basis-175"] {
+    @include flex-item-basis(175);
+}
+
+[data-flex--item*="basis-200"] {
+    @include flex-item-basis(200);
+}
+
+[data-flex--item*="basis-225"] {
+    @include flex-item-basis(225);
+}
+
+[data-flex--item*="basis-250"] {
+    @include flex-item-basis(250);
+}
+
+[data-flex--item*="basis-275"] {
+    @include flex-item-basis(275);
+}
+
+[data-flex--item*="basis-300"] {
+    @include flex-item-basis(300);
+}
+
+[data-flex--item*="basis-325"] {
+    @include flex-item-basis(325);
+}
+
+[data-flex--item*="basis-350"] {
+    @include flex-item-basis(350);
+}
+
+[data-flex--item*="basis-375"] {
+    @include flex-item-basis(375);
+}
+
+[data-flex--item*="basis-400"] {
+    @include flex-item-basis(400);
+}
+
+[data-flex--item*="basis-425"] {
+    @include flex-item-basis(425);
+}
+
+[data-flex--item*="basis-450"] {
+    @include flex-item-basis(450);
+}
+
+[data-flex--item*="basis-475"] {
+    @include flex-item-basis(475);
+}
+
+[data-flex--item*="basis-500"] {
+    @include flex-item-basis(500);
+}
+
+[data-flex--item*="basis-525"] {
+	@include flex-item-basis(525);
+}
+
+[data-flex--item*="basis-550"] {
+	@include flex-item-basis(550);
+}
+
+[data-flex--item*="basis-575"] {
+	@include flex-item-basis(575);
+}
+
+[data-flex--item*="basis-600"] {
+	@include flex-item-basis(600);
+}
+
+[data-flex--item*="basis-625"] {
+	@include flex-item-basis(625);
+}
+
+[data-flex--item*="basis-650"] {
+	@include flex-item-basis(650);
+}
+
+[data-flex--item*="basis-675"] {
+	@include flex-item-basis(675);
+}
+
+[data-flex--item*="basis-700"] {
+	@include flex-item-basis(700);
+}
+
+[data-flex--item*="basis-725"] {
+	@include flex-item-basis(725);
+}
+
+[data-flex--item*="basis-750"] {
+	@include flex-item-basis(750);
+}
+
+[data-flex--item*="basis-775"] {
+	@include flex-item-basis(775);
+}
+
+[data-flex--item*="basis-800"] {
+	@include flex-item-basis(800);
+}
+
+
+
+
+
+/*=----------|2.1.3 Grow and Shrink  |----------=*/
+
+
+/*--    Grow    --*/
+
+@mixin flex-item-grow($flx-grow: 0) {
+	flex-grow: $flx-grow;
+    max-width: 100%;
+}
+
+[data-flex--item*="grow-0"] {
+    @include flex-item-grow(0); //Default
+}
+
+[data-flex--item*="grow-1"] {
+    @include flex-item-grow(1);
+}
+
+[data-flex--item*="grow-2"] {
+    @include flex-item-grow(2);
+}
+
+[data-flex--item*="grow-3"] {
+    @include flex-item-grow(3);
+}
+
+[data-flex--item*="grow-4"] {
+    @include flex-item-grow(4);
+}
+
+[data-flex--item*="grow-5"] {
+    @include flex-item-grow(5);
+}
+
+[data-flex--item*="grow-6"] {
+    @include flex-item-grow(6);
+}
+
+[data-flex--item*="grow-7"] {
+    @include flex-item-grow(7);
+}
+
+[data-flex--item*="grow-8"] {
+    @include flex-item-grow(8);
+}
+
+[data-flex--item*="grow-9"] {
+    @include flex-item-grow(9);
+}
+
+[data-flex--item*="grow-10"] {
+    @include flex-item-grow(10);
+}
+
+
+
+/*--    Shrink    --*/
+
+@mixin flex-item-shrink($flx-shrink: 0) {
+    flex-shrink: $flx-shrink;
+    max-width: 100%;
+}
+
+[data-flex--item*="shrink-0"] {
+    @include flex-item-shrink(0);
+}
+
+[data-flex--item*="shrink-1"] {
+    @include flex-item-shrink(1); //Default
+}
+
+[data-flex--item*="shrink-2"] {
+    @include flex-item-shrink(2);
+}
+
+[data-flex--item*="shrink-3"] {
+    @include flex-item-shrink(3);
+}
+
+[data-flex--item*="shrink-4"] {
+    @include flex-item-shrink(4);
+}
+
+[data-flex--item*="shrink-5"] {
+    @include flex-item-shrink(5);
+}
+
+[data-flex--item*="shrink-6"] {
+    @include flex-item-shrink(6);
+}
+
+[data-flex--item*="shrink-7"] {
+    @include flex-item-shrink(7);
+}
+
+[data-flex--item*="shrink-8"] {
+    @include flex-item-shrink(8);
+}
+
+[data-flex--item*="shrink-9"] {
+    @include flex-item-shrink(9);
+}
+
+[data-flex--item*="shrink-10"] {
+    @include flex-item-shrink(10);
+}
+
+
+
+/*=----------|2.1.4 By Parent  |----------=*/
+
+//TODO do we want to set ability to size children by the parent?
+
+//Put these on the flex container to overide the size on all of its children flex items
+//
+//
+//Note: these are from an old version of this framwork. Needs to be reworked.
+//.flex-items-col-auto > * {
+//flex-grow: 1;
+//	width: auto;
+//	width: initial;
+//}
+//
+//.flex-items-col-0 > * {
+//	flex-grow: 0;
+//	flex-basis: auto;
+//	width: auto;
+//	width: initial;
+//}
+//
+
+
+
+
+/* =-----------------------------=
+		2.2 Offsets
+ */
+
+@mixin flex-item-offset($flx-fraction) {
+	$flx-columns: ( 100 / 12);
+	margin-left: calc( (#{$flx-columns} * (#{$flx-fraction} * 1%)));
+}
+
+[data-flex--item*="offset-col-1"] {
+	@include flex-item-offset(1);
+}
+
+[data-flex--item*="offset-col-2"] {
+	@include flex-item-offset(2);
+}
+
+[data-flex--item*="offset-col-3"] {
+	@include flex-item-offset(3);
+}
+
+[data-flex--item*="offset-col-4"] {
+	@include flex-item-offset(4);
+}
+
+[data-flex--item*="offset-col-5"] {
+	@include flex-item-offset(5);
+}
+
+[data-flex--item*="offset-col-5"] {
+	@include flex-item-offset(6);
+}
+
+[data-flex--item*="offset-col-7"] {
+	@include flex-item-offset(7);
+}
+
+[data-flex--item*="offset-col-8"] {
+	@include flex-item-offset(8);
+}
+
+[data-flex--item*="offset-col-9"] {
+	@include flex-item-offset(9);
+}
+
+[data-flex--item*="offset-col-10"] {
+	@include flex-item-offset(10);
+}
+
+[data-flex--item*="offset-col-11"] {
+	@include flex-item-offset(11);
+}
+
+[data-flex--item*="offset-col-12"] {
+	@include flex-item-offset(12);
+}
+
+
+
+/* =-----------------------------=
+		2.3 Break
+ */
+//use this to do a row break
+[data-flex--item*="break"] {
+  flex-basis: 100%;
+	width: 100%;
+}
+
+
+
+/* =-----------------------------=
+		2.4 Pulls
+ */
+
+//The flex pulls will pull them and anything between them and the side they are getting pulled to to that side. If you would like to pull only one item make sure it is in the correct order on the row and keep things in seperate rows.
+[data-flex--item*="pull-right"] {
+	margin-left: auto !important;
+}
+
+[data-flex--item*="pull-left"] {
+	margin-right: auto !important;
+}
+
+[data-flex--item*="pull-center"] {
+	margin: 0 auto;
+	margin: inherit auto !important;
+}
+
+[data-flex--item*="pull-up"] {
+	align-self: flex-start;
+}
+
+[data-flex--item*="pull-down"] {
+	align-self: flex-end;
+}
+
+[data-flex--item*="pull-middle"] {
+	align-self: center;
+}
+
+
+
+/* =-----------------------------=
+		2.5 Floats
+ */
+
+//These are very literal floats. They are positioned absolutely according to their parent container and are taken out of the flow of all other elements. These means things can be displayed underneath it.
+//NOTE: Floats can be combined.
+
+
+[data-flex--item*="float-right"] {
+	position: absolute;
+	right: 10px;
+	z-index: 9000; //TODO: set standards for z-index
+}
+
+[data-flex--item*="float-left"] {
+	position: absolute;
+	left: 10px;
+	z-index: 9000; //TODO: set standards for z-index
+}
+
+[data-flex--item*="float-top"] {
+	position: absolute;
+	top: 10px;
+	z-index: 9000; //TODO: set standards for z-index
+}
+
+[data-flex--item*="float-bottom"] {
+	position: absolute;
+	bottom: 10px;
+	z-index: 9000; //TODO: set standards for z-index
+}
+
+
+
+/* =-----------------------------=
+		2.6 Stretch
+ */
+
+//Makes flex item take up as much horizontal space on the flex row that it can.
+[data-flex--item*="wide"] {
+	flex-grow: 1;
+}
+
+//Flex item will try to stretch to be as tall as it can be on its flex row.
+[data-flex--item*="tall"] {
+	align-self: stretch;
+}
+
+//Flex item stretches both 'wide' and 'tall'.
+[data-flex--item*="fat"] {
+	flex-grow: 1;
+	align-self: stretch;
+}
+
+
+
+/*=----------|2.7.2 Spacing  |----------=*/
+
+/*   ----  Margins  ----   */
+
+//All Sides
+[data-flex--item*="mar-0"] {
+	margin: 0;}
+[data-flex--item*="mar-5"] {
+	margin: 5px;}
+[data-flex--item*="mar-10"] {
+	margin: 10px;}
+[data-flex--item*="mar-20"] {
+	margin: 20px;}
+[data-flex--item*="mar-30"] {
+	margin: 30px;}
+[data-flex--item*="mar-40"] {
+	margin: 40px;}
+[data-flex--item*="mar-50"] {
+	margin: 50px;}
+
+//Top
+[data-flex--item*="mar-t0"] {
+	margin-top: 0px;}
+[data-flex--item*="mar-t5"] {
+	margin-top: 5px;}
+[data-flex--item*="mar-t10"] {
+	margin-top: 10px;}
+[data-flex--item*="mar-t20"] {
+	margin-top: 20px;}
+[data-flex--item*="mar-t30"] {
+	margin-top: 30px;}
+[data-flex--item*="mar-t40"] {
+	margin-top: 40px;}
+[data-flex--item*="mar-t50"] {
+	margin-top: 50px;}
+
+//Bottom
+[data-flex--item*="mar-b0"] {
+	margin-botom: 0;}
+[data-flex--item*="mar-b5"] {
+	margin-botom: 5px;}
+[data-flex--item*="mar-b10"] {
+	margin-botom: 10px;}
+[data-flex--item*="mar-b20"] {
+	margin-botom: 20px;}
+[data-flex--item*="mar-b30"] {
+	margin-botom: 30px;}
+[data-flex--item*="mar-b40"] {
+	margin-botom: 40px;}
+[data-flex--item*="mar-b50"] {
+	margin-botom: 50px;}
+
+//Sides
+[data-flex--item*="mar-lr0"] {
+	margin-right: 0;
+	margin-left: 0;}
+[data-flex--item*="mar-lr5"] {
+	margin-right: 5px;
+	margin-left: 5px;}
+[data-flex--item*="mar-lr10"] {
+	margin-right: 10px;
+	margin-left: 10px;}
+[data-flex--item*="mar-lr20"] {
+	margin-right: 20px;
+	margin-left: 20px;}
+[data-flex--item*="mar-lr30"] {
+	margin-right: 30px;
+	margin-left: 30px;}
+[data-flex--item*="mar-lr40"] {
+	margin-right: 40px;
+	margin-left: 40px;}
+[data-flex--item*="mar-lr50"] {
+	margin-right: 50px;
+	margin-left: 50px;}
+
+/*   ----  Padding  ----   */
+
+//All Sides
+[data-flex--item*="pad-0"] {
+	padding: 0;}
+[data-flex--item*="pad-5"] {
+	padding: 5px;}
+[data-flex--item*="pad-10"] {
+	padding: 10px;}
+[data-flex--item*="pad-20"] {
+	padding: 20px;}
+[data-flex--item*="pad-30"] {
+	padding: 30px;}
+[data-flex--item*="pad-40"] {
+	padding: 40px;}
+[data-flex--item*="pad-50"] {
+	padding: 50px;}
+
+//Top
+[data-flex--item*="pad-t0"] {
+	padding-top: 0px;}
+[data-flex--item*="pad-t5"] {
+	padding-top: 5px;}
+[data-flex--item*="pad-t10"] {
+	padding-top: 10px;}
+[data-flex--item*="pad-t20"] {
+	padding-top: 20px;}
+[data-flex--item*="pad-t30"] {
+	padding-top: 30px;}
+[data-flex--item*="pad-t40"] {
+	padding-top: 40px;}
+[data-flex--item*="pad-t50"] {
+	padding-top: 50px;}
+
+//Bottom
+[data-flex--item*="pad-b0"] {
+	padding-botom: 0;}
+[data-flex--item*="pad-b5"] {
+	padding-botom: 5px;}
+[data-flex--item*="pad-b10"] {
+	padding-botom: 10px;}
+[data-flex--item*="pad-b20"] {
+	padding-botom: 20px;}
+[data-flex--item*="pad-b30"] {
+	padding-botom: 30px;}
+[data-flex--item*="pad-b40"] {
+	padding-botom: 40px;}
+[data-flex--item*="pad-b50"] {
+	padding-botom: 50px;}
+
+//Sides
+[data-flex--item*="pad-lr0"] {
+	padding-right: 0;
+	padding-left: 0;}
+[data-flex--item*="pad-lr5"] {
+	padding-right: 5px;
+	padding-left: 5px;}
+[data-flex--item*="pad-lr10"] {
+	padding-right: 10px;
+	padding-left: 10px;}
+[data-flex--item*="pad-lr20"] {
+	padding-right: 20px;
+	padding-left: 20px;}
+[data-flex--item*="pad-lr30"] {
+	padding-right: 30px;
+	padding-left: 30px;}
+[data-flex--item*="pad-lr40"] {
+	padding-right: 40px;
+	padding-left: 40px;}
+[data-flex--item*="pad-lr50"] {
+	padding-right: 50px;
+	padding-left: 50px;}

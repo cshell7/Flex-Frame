@@ -1,0 +1,124 @@
+/* ----------------------------------------------------------------------------------
+			TITLE OF STYLE SHEET
+---------------------------------------------------------------------------------- */
+
+/* +============================+
+		A. INTRODUCTION/NOTES:
++=============================+ */
+/*
+
+For: Notes, Important things, TODO's, stuff, Tigers, Lions, Bears..., etc.
+
+*/
+
+/* +=============================+
+		B. TABLE OF CONTENTS:
++=============================+ */
+/*
+
+    A. Notes
+    B. Table of Contents
+
+	1.
+		1.1
+			1.1.1
+
+
+
+*/
+
+
+/* +=============================+
+		1.
++=============================+ */
+
+/* =-----------------------------=
+		1.1
+ */
+
+/*=----------|1.1.1  |----------=*/
+
+/* +=============================+
+		#. Testing
++=============================+ */
+
+
+
+.flex-test-checkbox {
+	height: 30px;
+	width: 400px;
+    display: flex;
+}
+
+.flex-test-checkbox + * {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-test-checkbox:before {
+	content: "- Test Check Box:";
+	line-height: 30px;
+	margin-left: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #26be66;
+}
+
+.flex-diagnose-checkbox {
+	height: 30px;
+	width: 675px;
+}
+
+.flex-diagnose-checkbox:after {
+	font-size: 30px;
+	content: "- Toggle flex diagnose colors:";
+	line-height: 30px;
+	margin-left: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #26be66;
+}
+
+.flex-test-checkbox + div {
+	transition: width 5s;
+	transition-timing-function: linear;
+}
+
+.flex-test-checkbox:checked + div {
+	width: 300px;
+	transition: width 5s;
+	transition-timing-function: linear;
+}
+
+.flex-diagnose-checkbox:checked + div {
+	[data-flex--container*="true"] {
+	background-color: #8ba8ff;
+	outline: 4px solid #ff8c37;
+}
+
+    [data-flex--container*="true"] > * {
+	background-color: #ededed;
+	border: 1px solid #36329f;
+}
+
+.offset-0,
+.offset-1,
+.offset-2,
+.offset-3,
+.offset-4,
+.offset-5,
+.offset-6,
+.offset-7,
+.offset-8,
+.offset-9,
+.offset-10,
+.offset-11,
+.offset-12 {
+	background-color: #ffefbb;
+}
+
+}
+
+.centeralltext > * {
+    text-align: center;
+}

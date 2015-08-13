@@ -1,0 +1,64 @@
+/* ----------------------------------------------------------------------------------
+			TITLE OF STYLE SHEET
+---------------------------------------------------------------------------------- */
+
+/* +============================+
+		A. INTRODUCTION/NOTES:
++=============================+ */
+/*
+
+For: Notes, Important things, TODO's, stuff, Tigers, Lions, Bears..., etc.
+
+*/
+
+/* +=============================+
+		B. TABLE OF CONTENTS:
++=============================+ */
+/*
+
+    A. Notes
+    B. Table of Contents
+
+	1.
+		1.1
+			1.1.1
+
+
+
+*/
+
+
+/* +=============================+
+		1.
++=============================+ */
+
+/* =-----------------------------=
+		1.1
+ */
+
+/*=----------|1.1.1  |----------=*/
+
+
+//VAR: Sets the max size of the Responsive site container
+$container-max-size: 1100px;
+
+//TODO should we name these something diff since they are not actually flex?
+
+[data--site-container="responsive"] {
+	margin-left: auto;
+	margin-right: auto;
+	width: 92%;
+	width: 92vw;
+	max-width: $container-max-size;
+}
+@media (max-width: $container-max-size) {
+	[data--site-container="responsive"] {
+		max-width: 92%;
+		max-width: 92vw;
+	}
+}
+
+[data--site-container="full-width"] {
+	width: 100%;
+	width: 100vw;
+}
