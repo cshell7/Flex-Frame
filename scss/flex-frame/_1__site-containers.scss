@@ -1,5 +1,5 @@
 /* ----------------------------------------------------------------------------------
-			TITLE OF STYLE SHEET
+			Site Containers
 ---------------------------------------------------------------------------------- */
 
 /* +============================+
@@ -19,9 +19,9 @@ For: Notes, Important things, TODO's, stuff, Tigers, Lions, Bears..., etc.
     A. Notes
     B. Table of Contents
 
-	1.
-		1.1
-			1.1.1
+	1. Site Containers
+		1.1 Responsive
+		1.2 Full Width
 
 
 
@@ -29,36 +29,35 @@ For: Notes, Important things, TODO's, stuff, Tigers, Lions, Bears..., etc.
 
 
 /* +=============================+
-		1.
+		1. Site Containers
 +=============================+ */
 
+
 /* =-----------------------------=
-		1.1
+		1.1 Responsive
  */
 
-/*=----------|1.1.1  |----------=*/
+ [data-flex__container="container__responsive"] {
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	width: 92%;
+ 	width: 92vw;
+ 	max-width: $container-max-size;
+ }
+ @media (max-width: $container-max-size) {
+ 	[data-flex__container="container__responsive"] {
+ 		max-width: 92%;
+ 		max-width: 92vw;
+ 	}
+ }
 
 
-//VAR: Sets the max size of the Responsive site container
-$container-max-size: 1100px;
+ /* =-----------------------------=
+ 		1.2 Full Width
+  */
 
-//TODO should we name these something diff since they are not actually flex?
 
-[data--site-container="responsive"] {
-	margin-left: auto;
-	margin-right: auto;
-	width: 92%;
-	width: 92vw;
-	max-width: $container-max-size;
-}
-@media (max-width: $container-max-size) {
-	[data--site-container="responsive"] {
-		max-width: 92%;
-		max-width: 92vw;
-	}
-}
-
-[data--site-container="full-width"] {
+[data-flex__container="container__full-width"] {
 	width: 100%;
 	width: 100vw;
 }

@@ -1,48 +1,62 @@
 /* ----------------------------------------------------------------------------------
-			TITLE OF STYLE SHEET
+			Flex Variables
 ---------------------------------------------------------------------------------- */
 
-/* +============================+
-		A. INTRODUCTION/NOTES:
-+=============================+ */
-/*
-
-For: Notes, Important things, TODO's, stuff, Tigers, Lions, Bears..., etc.
-
-*/
 
 /* +=============================+
-		B. TABLE OF CONTENTS:
+		A. TABLE OF CONTENTS:
 +=============================+ */
 /*
 
-    A. Notes
-    B. Table of Contents
+    A. Table of Contents
 
-	1.
-		1.1
-			1.1.1
-
+	1. Set Global Attributes
+  2. Variables
+    2.1 Site Containers
+    2.2 Flex Containers
+    2.3 Flex Items
+    2.4 Flex Columns
 
 
 */
 
 
 /* +=============================+
-		1.
+		1. Set Global Attributes
 +=============================+ */
 
-/* =-----------------------------=
-		1.1
- */
-
-/*=----------|1.1.1  |----------=*/
-
-
-/*TODO: Add this to other scss file*/
+/* This is not necissary but simply a personal prefference of mine cause I think it makes things easier. Google what border-box is to decide for yourself if you want to include this or not. */
 html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+
+/* +=============================+
+		2. Variables
++=============================+ */
+
+/* =-----------------------------=
+		2.1 Site Containers
+ */
+
+ //VAR: Sets the max size of the responsive site container
+ $container-max-size: 1100px;
+
+/* =-----------------------------=
+		2.2 Flex Containers
+ */
+
+
+
+/* =-----------------------------=
+		2. Flex Items
+ */
+
+
+
+/* =-----------------------------=
+		2. Flex Columns
+ */
