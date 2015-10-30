@@ -1,0 +1,163 @@
+/* ----------------------------------------------------------------------------------
+			CONTAINERS
+---------------------------------------------------------------------------------- */
+
+
+/* +============================+
+		A. INTRODUCTION/NOTES:
++=============================+ */
+/*
+
+  These are basic containers for the site's main content.
+
+*/
+
+
+/* +=============================+
+		B. TABLE OF CONTENTS:
++=============================+ */
+/*
+
+    A. Notes
+    B. Table of Contents
+
+		1. Site Containers
+		  1.1 Responsive
+		  1.2 Full Width
+			1.3 Margins/Padding
+		2. Cards
+		3. Boxes
+
+*/
+
+
+/* +=============================+
+		1. Site Containers
++=============================+ */
+
+/* =-----------------------------=
+		1.1 Responsive
+ */
+
+//NOTE: If you need a flex item to be the same size as a site container, do not use a site container instead use "data-flex--item='site-container'"
+
+[data--site-container*='responsive'] {
+	margin-left: auto;
+	margin-right: auto;
+	width: 95% !important;
+	width: 95vw !important;
+	max-width: $screen-large;
+}
+@media (max-width: $screen-large) {
+	[data--site-container*='responsive'] {
+		max-width: 95% !important;
+		max-width: 95vw !important;
+	}
+}
+
+/* =-----------------------------=
+		1.2 Full Width
+ */
+
+[data--site-container*='full-width'] {
+	width: 100% !important;
+	width: 100vw !important;
+}
+
+
+/* =-----------------------------=
+		1. Margins/Padding
+ */
+
+[data--site-container] {
+	&[data--site-container*='pad-none'] {
+		padding: 0;
+	}
+	&[data--site-container*='pad-xs'] {
+		@include padding-scaling(xs ,$responsive-ratio);
+	}
+	&[data--site-container*='pad-sm'] {
+		@include padding-scaling(sm ,$responsive-ratio);
+	}
+	&[data--site-container*='pad-md'] {
+		@include padding-scaling(md ,$responsive-ratio);
+	}
+	&[data--site-container*='pad-lg'] {
+		@include padding-scaling(lg ,$responsive-ratio);
+	}
+	&[data--site-container*='pad-xl'] {
+		@include padding-scaling(xl ,$responsive-ratio);
+	}
+	&[data--site-container*='pad-xxl'] {
+		@include padding-scaling(xxl ,$responsive-ratio);
+	}
+	&[data--site-container*='pad-3xl'] {
+		@include padding-scaling(3xl ,$responsive-ratio);
+	}
+	&[data--site-container*='pad-4xl'] {
+		@include padding-scaling(4xl ,$responsive-ratio);
+	}
+	&[data--site-container*='pad-5xl'] {
+		@include padding-scaling(5xl ,$responsive-ratio);
+	}
+}
+
+//NOTE: Margins should not be applied on on site containers.
+//NOTE: If you need a flex item to be the same size as a site container, do not use a site container instead use "data-flex--item='site-container'"
+
+/* +=============================+
+		2. Cards
++=============================+ */
+
+//NOTE: Cards are anything that is placed immediately inside a site container.
+
+
+//Make sure to give cards the 'card' flex--item attribute so the proper responsive margins are applied.
+[data-flex--item*="card"] {
+
+
+	//Margins
+	&[data-flex--item*='mar-none'] {
+		margin: 0;
+	}
+	&[data-flex--item*='mar-xs'] {
+		@include margin-scaling(xs ,$responsive-ratio);
+	}
+	&[data-flex--item*='mar-sm'] {
+		@include margin-scaling(sm ,$responsive-ratio);
+	}
+	&[data-flex--item*='mar-md'] {
+		@include margin-scaling(md ,$responsive-ratio);
+	}
+	&[data-flex--item*='mar-lg'] {
+		@include margin-scaling(lg ,$responsive-ratio);
+	}
+	&[data-flex--item*='mar-xl'] {
+		@include margin-scaling(xl ,$responsive-ratio);
+	}
+	&[data-flex--item*='mar-xxl'] {
+		@include margin-scaling(xxl ,$responsive-ratio);
+	}
+	&[data-flex--item*='mar-3xl'] {
+		@include margin-scaling(3xl ,$responsive-ratio);
+	}
+	&[data-flex--item*='mar-4xl'] {
+		@include margin-scaling(4xl ,$responsive-ratio);
+	}
+	&[data-flex--item*='mar-5xl'] {
+		@include margin-scaling(5xl ,$responsive-ratio);
+	}
+}
+
+//NOTE: Padding classes are generic, see flex__spacing-helpers.scss
+
+
+
+/* +=============================+
+		3. Boxes
++=============================+ */
+
+// NOTE: This is currently not used for anything, but maybe one day.
+//[data-flex--item*="box"] {}
+
+//NOTE: Margin and Padding classes are generic, see flex__spacing-helpers.scss

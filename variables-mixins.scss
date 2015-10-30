@@ -1,0 +1,104 @@
+/* ----------------------------------------------------------------------------------
+			VARIABLES AND MIXINS
+---------------------------------------------------------------------------------- */
+
+/* +============================+
+		A. INTRODUCTION/NOTES:
++=============================+ */
+/*
+
+  All of the  variables and mixins and functions used globally accross all of the SCSS files.
+
+
+*/
+
+/* +=============================+
+		B. TABLE OF CONTENTS:
++=============================+ */
+/*
+
+    A. Notes
+    B. Table of Contents
+
+	1. Variables
+  2. Mixins
+    2.1 Typography
+		2.2 Borders
+    2.3 Elevation
+    2.4 Media Queries
+    2.5 Padding and Margin
+    2.6 Flex
+
+
+
+*/
+
+  // Posible Statuses of imported files:
+  //		DONE: Ready for Produciton
+  //		REVIEW: Needs to be reviewed and tested
+  //		CONSTRUCTION: Under construction
+  //    OLD: Needs to be updated to new styles and standards
+
+
+
+/* +=============================+
+		1. Variables
++=============================+ */
+
+
+  //ALL: Find all the variables here. Colors, sizing, magic, 42, etc.
+  @import 'variables-mixins/variables.scss'; // CONSTUCTION
+
+
+
+/* +=============================+
+		2. Mixins
++=============================+ */
+
+
+
+/* =-----------------------------=
+		2.1 Typography
+ */
+
+ @import 'variables-mixins/typography.scss'; //Testing
+
+
+
+/* =-----------------------------=
+		2.2 Borders
+ */
+
+ @import 'variables-mixins/borders.scss'; //Testing
+
+
+
+/* =-----------------------------=
+		2.3 Elevation
+ */
+
+ @import 'variables-mixins/elevation.scss'; //Done
+
+
+
+/* =-----------------------------=
+		2.4 Media Queries
+ */
+
+ @import 'variables-mixins/media-queries.scss'; //Construction
+
+
+
+/* =-----------------------------=
+		2.5 Padding and Margin
+ */
+
+ @import 'variables-mixins/padding-and-margins.scss'; //Testing
+
+
+
+/* =-----------------------------=
+		2.6 Flex
+ */
+
+ @import 'variables-mixins/flex.scss'; //Done
